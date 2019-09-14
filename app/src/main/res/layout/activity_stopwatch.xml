@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".stopwatch"
+    android:background="@color/background">
+
+    <ImageView
+        android:id="@+id/ivcircle"
+        android:layout_width="255dp"
+        android:layout_height="283dp"
+        android:src="@drawable/bgcircle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <ImageView
+        android:id="@+id/ivtick"
+        android:layout_width="358dp"
+        android:layout_height="357dp"
+        android:src="@drawable/icanchor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.072" />
+
+    <Chronometer
+        android:id="@+id/timerhere"
+        android:layout_width="282dp"
+        android:layout_height="110dp"
+        android:textColor="#fff"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivtick"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/btnBegin"
+        android:layout_width="247dp"
+        android:layout_height="68dp"
+        android:background="@drawable/btngreen"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:padding="20dp"
+        android:text="START NOW"
+        android:textColor="#f7e7e2e2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timerhere"
+        app:layout_constraintVertical_bias="0.195" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
