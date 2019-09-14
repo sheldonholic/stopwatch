@@ -51,8 +51,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/btnstart"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvname" />
+        app:layout_constraintTop_toBottomOf="@+id/tvname"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnstart"
@@ -69,9 +71,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintCircleRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.556"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/ivpic"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintVertical_bias="0.911" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
